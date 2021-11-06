@@ -36,7 +36,7 @@
 
 /* Main banner */
 .main {
-	background: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)), url(./images/apple-1838564_1920-main.jpg); /* Browser prefixes*/
+	background: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)), url(./images/casey-horner-RmoWqDCqN2E-unsplash.jpg); /* Browser prefixes*/
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-attachment: fixed;
