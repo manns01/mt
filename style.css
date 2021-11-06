@@ -228,11 +228,3 @@
 .home-footer a, .portfolio-footer a, .resume-footer a, .contact-footer a {color: white;}
 .home-footer a:hover, .portfolio-footer a:hover, .resume-footer a:hover, .contact-footer a:hover {
 }
-
-a {
-    display:inline-block;
-    width:30px;
-    height:30px;
-    background-color:#ccc;
-    border:1px solid #ff0000;
-}
