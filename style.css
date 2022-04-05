@@ -39,7 +39,7 @@
 	background: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)), url(./images/kyle-goetsch-VxaZjhobxFw-unsplash.jpg); /* Browser prefixes*/
 	background-color: white;
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center center;
 	background-attachment: fixed;
 	padding: 14.7% 0; /* Center contents within the container, make background image cover*/
 }
