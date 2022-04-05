@@ -37,7 +37,7 @@
 /* Main banner */
 .main {
 	background: linear-gradient(rgba(20, 20, 20, 0.7), rgba(20, 20, 20, 0.7)), url(./images/kyle-goetsch-VxaZjhobxFw-unsplash.jpg); /* Browser prefixes*/
-	height: 100%;
+	color: white;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
