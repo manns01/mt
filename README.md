@@ -1,2 +1,2 @@
-# manish-tamta-phy.github.io
-Project website
+# manns.github.io
+Personal webpage
