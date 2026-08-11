@@ -3,53 +3,72 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
 
 ```
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
 
-<title>Manish Tamta | Cosmology &amp; Gravitational Lensing</title>
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>
+    Manish Tamta | Gravitational Lensing, Astroparticle Physics & Cosmology
+</title>
 
 <meta name="description"
-    content="Manish Tamta is a PhD researcher at the Indian Institute of Science working in gravitational lensing, astroparticle physics and cosmology.">
+      content="Manish Tamta is a PhD researcher at the Indian Institute of Science working on gravitational lensing, astroparticle physics and cosmology.">
 
-<meta name="author" content="Manish Tamta">
+<meta name="author"
+      content="Manish Tamta">
+
+<meta name="keywords"
+      content="Manish Tamta, gravitational lensing, cosmology, astroparticle physics, dark matter, microlensing, IISc">
 
 <link rel="canonical"
-    href="https://manish-tamta-phy.github.io/">
+      href="https://manish-tamta-phy.github.io/">
 
-<!-- Google Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Fonts -->
 
-<link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600&display=swap"
-    rel="stylesheet">
+<link rel="preconnect"
+      href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+      rel="stylesheet">
 
 <!-- Main stylesheet -->
-<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+      href="style.css">
 
 
 <!-- Open Graph -->
 
 <meta property="og:title"
-    content="Manish Tamta | Cosmology &amp; Gravitational Lensing">
+      content="Manish Tamta | Cosmology & Gravitational Lensing">
 
 <meta property="og:description"
-    content="PhD researcher at the Indian Institute of Science working in gravitational lensing, astroparticle physics and cosmology.">
+      content="PhD researcher at the Indian Institute of Science working on gravitational lensing, astroparticle physics and cosmology.">
 
-<meta property="og:type" content="website">
+<meta property="og:type"
+      content="website">
 
 <meta property="og:url"
-    content="https://manish-tamta-phy.github.io/">
+      content="https://manish-tamta-phy.github.io/">
 
+<meta property="og:image"
+      content="https://manish-tamta-phy.github.io/images/20250625-110214.jpg">
 
 
 <!-- Structured data -->
 
 <script type="application/ld+json">
+
 {
     "@context": "https://schema.org",
+
     "@type": "Person",
 
     "name": "Manish Tamta",
@@ -67,8 +86,9 @@
     "sameAs": [
         "https://scholar.google.com/citations?user=9Eu10_cAAAAJ",
         "https://inspirehep.net/authors/2797698",
-        "https://www.linkedin.com/in/manish-tamta-7a4bb9184/",
-        "https://github.com/manns01"
+        "https://orcid.org/0009-0006-7088-8705",
+        "https://github.com/manns01",
+        "https://www.linkedin.com/in/manish-tamta-7a4bb9184/"
     ],
 
     "knowsAbout": [
@@ -78,6 +98,7 @@
         "Dark Matter"
     ]
 }
+
 </script>
 ```
 
@@ -86,39 +107,72 @@
 <body>
 
 <!-- =========================================================
+     PAGE LOADER
+========================================================= -->
+
+<div class="page-loader" id="pageLoader">
+
+```
+<div class="loader-name">
+    MT
+</div>
+```
+
+</div>
+
+<!-- =========================================================
      NAVIGATION
 ========================================================= -->
 
-<header class="site-header">
+<header class="site-header"
+        id="siteHeader">
 
 ```
 <div class="nav-container">
 
-    <a href="index.html" class="site-logo">
+
+    <a href="#top"
+       class="site-logo"
+       aria-label="Manish Tamta home">
+
         MT
+
     </a>
 
 
-    <nav class="site-nav">
+    <button class="menu-toggle"
+            id="menuToggle"
+            aria-label="Open navigation menu"
+            aria-expanded="false">
 
-        <a href="index.html" class="active">
-            Home
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+
+    <nav class="site-nav"
+         id="siteNav">
+
+        <a href="#about">
+            About
         </a>
 
-        <a href="webpages/research.html">
+        <a href="#research">
             Research
         </a>
 
-        <a href="webpages/publications.html">
+        <a href="#publications">
             Publications
+        </a>
+
+        <a href="#journey">
+            Journey
         </a>
 
         <a href="webpages/Talks_and_posters.html">
             Talks
-        </a>
-
-        <a href="webpages/projects.html">
-            Projects
         </a>
 
         <a href="webpages/photography/clicks.html">
@@ -136,84 +190,108 @@
      HERO
 ========================================================= -->
 
-<main>
+<main id="top">
 
 <section class="hero">
 
 ```
+<!-- Animated background -->
+
+<div class="hero-grid"></div>
+
+<div class="hero-glow hero-glow-one"></div>
+
+<div class="hero-glow hero-glow-two"></div>
+
+
 <div class="hero-container">
 
 
-    <div class="hero-text">
+    <!-- LEFT -->
 
-        <p class="eyebrow">
+    <div class="hero-content reveal">
+
+
+        <div class="hero-kicker">
+
+            <span class="kicker-line"></span>
+
             PHYSICS · COSMOLOGY · GRAVITATIONAL LENSING
-        </p>
+
+        </div>
 
 
         <h1>
-            Manish Tamta
+
+            Manish
+            <span>Tamta</span>
+
         </h1>
 
 
-        <p class="hero-subtitle">
+        <div class="hero-role">
+
             PhD Researcher
+
             <span>·</span>
+
             Indian Institute of Science
+
+        </div>
+
+
+        <p class="hero-intro">
+
+            I study the Universe through
+            <strong>gravitational lensing</strong>,
+            with broad interests in
+            <strong>astroparticle physics and cosmology</strong>.
+
         </p>
 
 
-        <p class="hero-description">
-
-            I work at the intersection of
-            <strong>gravitational lensing, astroparticle physics
-            and cosmology</strong>, with a particular interest in
-            using gravitational lensing to explore the nature of
-            dark matter and the Universe.
-
-        </p>
+        <div class="hero-socials">
 
 
-        <div class="hero-links">
-
-            <a
-                href="https://scholar.google.com/citations?user=9Eu10_cAAAAJ"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="link-button">
+            <a href="https://scholar.google.com/citations?user=9Eu10_cAAAAJ"
+               target="_blank"
+               rel="noopener noreferrer">
 
                 Google Scholar
 
             </a>
 
 
-            <a
-                href="https://inspirehep.net/authors/2797698"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="link-button">
+            <a href="https://inspirehep.net/authors/2797698"
+               target="_blank"
+               rel="noopener noreferrer">
 
                 INSPIRE
 
             </a>
 
 
-            <a
-                href="https://github.com/manns01"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="link-button">
+            <a href="https://orcid.org/0009-0006-7088-8705"
+               target="_blank"
+               rel="noopener noreferrer">
+
+                ORCID
+
+            </a>
+
+
+            <a href="https://github.com/manns01"
+               target="_blank"
+               rel="noopener noreferrer">
 
                 GitHub
 
             </a>
 
 
-            <a
-                href="https://www.linkedin.com/in/manish-tamta-7a4bb9184/"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="link-button">
+            <a href="https://www.linkedin.com/in/manish-tamta-7a4bb9184/"
+               target="_blank"
+               rel="noopener noreferrer">
 
                 LinkedIn
 
@@ -222,18 +300,24 @@
         </div>
 
 
-        <div class="hero-secondary-links">
+        <div class="hero-cta">
 
-            <a href="webpages/publications.html">
-                Publications →
+            <a href="#research"
+               class="primary-button">
+
+                Explore my research
+
+                <span>↓</span>
+
             </a>
 
-            <a href="webpages/Talks_and_posters.html">
-                Talks →
-            </a>
 
-            <a href="https://form.jotform.com/211717788701461">
-                Contact →
+            <a href="webpages/publications.html"
+               class="secondary-button">
+
+                Publications
+                <span>↗</span>
+
             </a>
 
         </div>
@@ -242,17 +326,91 @@
 
 
 
-    <div class="hero-image">
+    <!-- RIGHT — SCIENTIFIC VISUAL -->
 
-        <div class="image-frame">
+    <div class="hero-visual reveal">
 
-            <img
-                src="images/20250625-110214.jpg"
-                alt="Manish Tamta">
+
+        <div class="visual-orbit orbit-one"></div>
+
+        <div class="visual-orbit orbit-two"></div>
+
+
+        <div class="visual-label visual-label-top">
+
+            GRAVITATIONAL
+            <br>
+            LENSING
 
         </div>
 
+
+        <div class="gif-container">
+
+            <img src="gifs/gravLens_finSource_New.gif"
+                 alt="Animated visualization of gravitational lensing">
+
+        </div>
+
+
+        <div class="visual-label visual-label-bottom">
+
+            WAVE OPTICS
+            <br>
+            ·
+            <br>
+            DARK MATTER
+
+        </div>
+
+
+        <div class="visual-dot dot-one"></div>
+
+        <div class="visual-dot dot-two"></div>
+
+        <div class="visual-dot dot-three"></div>
+
     </div>
+
+</div>
+
+
+<div class="scroll-indicator">
+
+    <span>
+        SCROLL TO EXPLORE
+    </span>
+
+    <div class="scroll-line"></div>
+
+</div>
+```
+
+</section>
+
+<!-- =========================================================
+     QUOTE
+========================================================= -->
+
+<section class="quote-section">
+
+```
+<div class="quote-container reveal">
+
+    <div class="quote-mark">
+        “
+    </div>
+
+    <blockquote>
+
+        I... a universe of atoms,
+        an atom in the universe.
+
+    </blockquote>
+
+    <cite>
+        — Richard P. Feynman
+    </cite>
 
 </div>
 ```
@@ -263,49 +421,82 @@
      ABOUT
 ========================================================= -->
 
-<section class="section about-section">
+<section class="section about-section"
+         id="about">
 
 ```
 <div class="content-container">
 
-    <div class="section-label">
-        ABOUT
+
+    <div class="section-heading reveal">
+
+        <span>
+            01
+        </span>
+
+        <p>
+            ABOUT ME
+        </p>
+
     </div>
 
 
     <div class="about-grid">
 
-        <div class="section-title">
 
-            <h2>
-                Curious about
-                <em>the Universe</em>
-                and how we can observe it.
-            </h2>
+        <div class="about-photo reveal">
+
+            <div class="photo-frame">
+
+                <img src="images/20250625-110214.jpg"
+                     alt="Manish Tamta">
+
+            </div>
+
+
+            <div class="photo-caption">
+
+                Manish Tamta
+                <span>
+                    ·
+                </span>
+                IISc
+
+            </div>
 
         </div>
 
 
-        <div class="about-text">
+
+        <div class="about-content reveal">
+
+
+            <h2>
+
+                Looking at the Universe
+                <em>through different lenses.</em>
+
+            </h2>
+
 
             <p>
 
-                Hi, I'm Manish. I am currently pursuing a PhD in
-                Physics at the
-                <strong>Indian Institute of Science (IISc)</strong>,
-                Bangalore.
+                Hi, I'm Manish. I am currently pursuing a Ph.D.
+                in Physics at the
+                <strong>Indian Institute of Science (IISc),
+                Bangalore</strong>.
 
             </p>
 
 
             <p>
 
-                I have previously worked as a visiting researcher at
-                the <strong>Max Planck Institute for Gravitational
+                I have worked as a visiting researcher at the
+                <strong>Max Planck Institute for Gravitational
                 Physics (Albert Einstein Institute)</strong> in
-                Potsdam, Germany. I hold an M.S. in Physics from IISc
-                and a B.Sc. in Physics from St. Stephen's College,
-                University of Delhi.
+                Potsdam, Germany. I hold an M.S. in Physics from
+                IISc and a B.Sc. in Physics from St. Stephen's
+                College, University of Delhi.
 
             </p>
 
@@ -313,22 +504,32 @@
             <p>
 
                 My broad research interests are
-                <strong>gravitational lensing, astroparticle physics
-                and cosmology</strong>.
-                I am particularly interested in dark matter,
-                microlensing and wave-optics effects in gravitational
-                lensing.
+                <strong>gravitational lensing, astroparticle
+                physics and cosmology</strong>. I am particularly
+                interested in dark matter, microlensing and
+                wave-optics effects in gravitational lensing.
 
             </p>
 
 
             <p>
 
-                Outside academia, I enjoy travelling and photography,
-                and I am interested in communicating science in ways
-                that make difficult ideas accessible and engaging.
+                Outside academia, I enjoy travelling and
+                photography, and I like communicating physics in
+                ways that make difficult ideas accessible and
+                engaging.
 
             </p>
+
+
+            <div class="about-links">
+
+                <a href="webpages/research.html">
+                    More about my research
+                    <span>→</span>
+                </a>
+
+            </div>
 
         </div>
 
@@ -343,45 +544,133 @@
      RESEARCH
 ========================================================= -->
 
-<section class="section research-section">
+<section class="section research-section"
+         id="research">
 
 ```
+<div class="research-background"></div>
+
+
 <div class="content-container">
 
-    <div class="section-label">
-        RESEARCH
+
+    <div class="section-heading light reveal">
+
+        <span>
+            02
+        </span>
+
+        <p>
+            RESEARCH
+        </p>
+
     </div>
 
 
-    <div class="research-intro">
+    <div class="research-header reveal">
 
         <h2>
+
             Gravitational Lensing,
-            Astroparticle Physics
-            &amp; Cosmology
+            <br>
+
+            <em>Astroparticle Physics</em>
+            &amp; Cosmology.
+
         </h2>
 
 
         <p>
 
-            My research explores the physics of dark matter and
-            gravitational lensing, from compact objects and
-            microlensing to wave-optics effects and new computational
-            approaches to cosmological inference.
+            Using gravitational lensing as a laboratory for
+            exploring dark matter, compact objects and the
+            physics of the Universe.
 
         </p>
 
+    </div>
 
-        <a
-            href="webpages/research.html"
-            class="text-link">
 
-            Explore my research
-            <span>→</span>
+    <div class="research-cards">
+
+
+        <a href="webpages/research.html"
+           class="research-card reveal">
+
+            <span class="card-number">
+                01
+            </span>
+
+            <h3>
+                Gravitational
+                Lensing
+            </h3>
+
+            <p>
+                Strong, weak and microlensing, including
+                wave-optics effects and non-standard lensing
+                regimes.
+            </p>
+
+            <span class="card-arrow">
+                →
+            </span>
+
+        </a>
+
+
+
+        <a href="webpages/research.html"
+           class="research-card reveal">
+
+            <span class="card-number">
+                02
+            </span>
+
+            <h3>
+                Astroparticle
+                Physics
+            </h3>
+
+            <p>
+                Dark matter, compact objects, primordial black
+                holes and connections between particle physics
+                and astrophysical observations.
+            </p>
+
+            <span class="card-arrow">
+                →
+            </span>
+
+        </a>
+
+
+
+        <a href="webpages/research.html"
+           class="research-card reveal">
+
+            <span class="card-number">
+                03
+            </span>
+
+            <h3>
+                Cosmology
+            </h3>
+
+            <p>
+                Cosmological structure, simulations and
+                computational approaches to understanding the
+                Universe.
+            </p>
+
+            <span class="card-arrow">
+                →
+            </span>
 
         </a>
 
     </div>
+
 
 </div>
 ```
@@ -389,118 +678,152 @@
 </section>
 
 <!-- =========================================================
-     SELECTED WORK
+     PUBLICATIONS
 ========================================================= -->
 
-<section class="section work-section">
+<section class="section publications-section"
+         id="publications">
 
 ```
 <div class="content-container">
 
-    <div class="section-label">
-        SELECTED WORK
+
+    <div class="section-heading reveal">
+
+        <span>
+            03
+        </span>
+
+        <p>
+            SELECTED PUBLICATIONS
+        </p>
+
     </div>
 
 
-    <div class="work-grid">
+    <div class="publication-list">
 
 
-        <!-- 2026 -->
+        <!-- PAPER 1 -->
 
-        <article class="work-card">
+        <article class="publication reveal">
 
-            <div class="work-year">
+
+            <div class="publication-year">
                 2026
             </div>
 
 
-            <h3>
-                Microlensing of fast and slow compact objects
-            </h3>
+            <div class="publication-main">
+
+                <h3>
+                    Microlensing of fast and slow
+                    compact objects
+                </h3>
 
 
-            <p class="authors">
-                Manish Tamta, Nirmal Raj &amp; Himanshu Verma
-            </p>
+                <p class="publication-authors">
+
+                    <strong>
+                        Manish Tamta
+                    </strong>,
+                    Nirmal Raj &amp; Himanshu Verma
+
+                </p>
 
 
-            <p>
+                <p class="publication-description">
 
-                Gravitational microlensing constraints on compact
-                objects with velocities spanning
-                \(10^{-4}c\)–\(10^{-1}c\).
+                    We investigate gravitational microlensing
+                    without restricting the lens population to
+                    conventional velocity assumptions, allowing
+                    compact objects spanning a broad range of
+                    velocities.
 
-            </p>
+                </p>
 
 
-            <a
-                href="https://arxiv.org/abs/2604.25434"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="card-link">
+                <a href="https://arxiv.org/abs/2604.25434"
+                   target="_blank"
+                   rel="noopener noreferrer">
 
-                arXiv:2604.25434
-                <span>↗</span>
+                    arXiv:2604.25434
+                    <span>↗</span>
 
-            </a>
+                </a>
+
+            </div>
 
         </article>
 
 
 
-        <!-- 2025 -->
+        <!-- PAPER 2 -->
 
-        <article class="work-card">
+        <article class="publication reveal">
 
-            <div class="work-year">
+
+            <div class="publication-year">
                 2025
             </div>
 
 
-            <h3>
-                Entering the window of primordial black hole
-                dark matter with X-ray microlensing
-            </h3>
+            <div class="publication-main">
+
+                <h3>
+                    Entering the window of primordial black
+                    hole dark matter with X-ray microlensing
+                </h3>
 
 
-            <p class="authors">
-                Manish Tamta, Nirmal Raj &amp; Prateek Sharma
-            </p>
+                <p class="publication-authors">
+
+                    <strong>
+                        Manish Tamta
+                    </strong>,
+                    Nirmal Raj &amp; Prateek Sharma
+
+                </p>
 
 
-            <p>
+                <p class="publication-journal">
 
-                X-ray microlensing as a probe of primordial black
-                holes in a mass range that is difficult to explore
-                with conventional optical surveys.
+                    Physical Review D 111, 043043 (2025)
 
-            </p>
+                </p>
 
 
-            <div class="card-links">
+                <p class="publication-description">
 
-                <a
-                    href="https://arxiv.org/abs/2405.20365"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="card-link">
+                    X-ray microlensing as a probe of primordial
+                    black holes and compact dark matter in a
+                    challenging mass range.
 
-                    arXiv
-                    <span>↗</span>
-
-                </a>
+                </p>
 
 
-                <a
-                    href="https://doi.org/10.1103/PhysRevD.111.043043"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="card-link">
+                <div class="publication-links">
 
-                    DOI
-                    <span>↗</span>
+                    <a href="https://arxiv.org/abs/2405.20365"
+                       target="_blank"
+                       rel="noopener noreferrer">
 
-                </a>
+                        arXiv
+                        <span>↗</span>
+
+                    </a>
+
+
+                    <a href="https://doi.org/10.1103/PhysRevD.111.043043"
+                       target="_blank"
+                       rel="noopener noreferrer">
+
+                        DOI
+                        <span>↗</span>
+
+                    </a>
+
+                </div>
 
             </div>
 
@@ -509,11 +832,10 @@
     </div>
 
 
-    <div class="section-footer-link">
+    <div class="section-action reveal">
 
-        <a
-            href="webpages/publications.html"
-            class="text-link">
+        <a href="webpages/publications.html"
+           class="outline-button">
 
             View all publications
             <span>→</span>
@@ -528,62 +850,171 @@
 </section>
 
 <!-- =========================================================
-     RECENT TALK
+     JOURNEY
 ========================================================= -->
 
-<section class="section talk-section">
+<section class="section journey-section"
+         id="journey">
 
 ```
 <div class="content-container">
 
-    <div class="talk-layout">
+
+    <div class="section-heading reveal">
+
+        <span>
+            04
+        </span>
+
+        <p>
+            ACADEMIC JOURNEY
+        </p>
+
+    </div>
 
 
-        <div>
+    <div class="journey-grid">
 
-            <div class="section-label">
-                RECENT TALK
+
+        <div class="timeline">
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-date">
+                    2024 — present
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        Ph.D. in Physics
+                    </h3>
+
+                    <p>
+                        Indian Institute of Science
+                        <br>
+                        Bangalore, India
+                    </p>
+
+                </div>
+
             </div>
 
 
-            <h2>
-                Wave-Optics Gravitational Lensing:
-                From X-Rays to Gravitational Waves
-            </h2>
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-date">
+                    2026
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        Visiting Researcher
+                    </h3>
+
+                    <p>
+                        Max Planck Institute for Gravitational
+                        Physics — Albert Einstein Institute
+                        <br>
+                        Potsdam, Germany
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-date">
+                    2022 — 2024
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        M.S. in Physics
+                    </h3>
+
+                    <p>
+                        Indian Institute of Science
+                        <br>
+                        Bangalore, India
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="timeline-item reveal">
+
+                <div class="timeline-date">
+                    2018 — 2021
+                </div>
+
+                <div class="timeline-content">
+
+                    <h3>
+                        B.Sc. (Hons.) in Physics
+                    </h3>
+
+                    <p>
+                        St. Stephen's College,
+                        University of Delhi
+                    </p>
+
+                </div>
+
+            </div>
 
         </div>
 
 
-        <div class="talk-details">
 
-            <p>
-
-                <strong>
-                    Cosmology Seminar
-                </strong>
-
-                <br>
-
-                Max Planck Institute for Astrophysics,
-                Garching
-
-                <br>
-
-                June 2026
-
-            </p>
+        <aside class="achievements reveal">
 
 
-            <a
-                href="webpages/Talks_and_posters.html"
-                class="text-link">
+            <div class="achievement-title">
+                RECOGNITION
+            </div>
 
-                Talks &amp; seminars
-                <span>→</span>
 
-            </a>
+            <div class="achievement">
 
-        </div>
+                <span>
+                    01
+                </span>
+
+                <p>
+                    INSPIRE Scholarship
+                    <br>
+                    Department of Science &amp; Technology
+                </p>
+
+            </div>
+
+
+            <div class="achievement">
+
+                <span>
+                    02
+                </span>
+
+                <p>
+                    Sumitomo Scholarship Award
+                    <br>
+                    Sumitomo Corporation, Japan
+                </p>
+
+            </div>
+
+        </aside>
 
     </div>
 
@@ -593,105 +1024,44 @@
 </section>
 
 <!-- =========================================================
-     ACADEMIC TIMELINE
+     CONTACT / CTA
 ========================================================= -->
 
-<section class="section timeline-section">
+<section class="contact-section">
 
 ```
+<div class="contact-background"></div>
+
+
 <div class="content-container">
 
-    <div class="section-label">
-        ACADEMIC JOURNEY
-    </div>
+
+    <div class="contact-content reveal">
 
 
-    <div class="timeline">
+        <p class="contact-kicker">
+            LET'S TALK PHYSICS
+        </p>
 
 
-        <div class="timeline-item">
+        <h2>
 
-            <span class="timeline-date">
-                2024 — present
-            </span>
+            Have an idea,
+            <br>
+            question or
+            <em>collaboration?</em>
 
-            <div>
-
-                <h3>
-                    PhD in Physics
-                </h3>
-
-                <p>
-                    Indian Institute of Science, Bangalore
-                </p>
-
-            </div>
-
-        </div>
+        </h2>
 
 
-        <div class="timeline-item">
+        <a href="https://form.jotform.com/211717788701461"
+           class="contact-button">
 
-            <span class="timeline-date">
-                2026
-            </span>
+            Get in touch
+            <span>↗</span>
 
-            <div>
+        </a>
 
-                <h3>
-                    Visiting Researcher
-                </h3>
-
-                <p>
-                    Max Planck Institute for Gravitational Physics
-                    (Albert Einstein Institute), Potsdam
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="timeline-item">
-
-            <span class="timeline-date">
-                2022 — 2024
-            </span>
-
-            <div>
-
-                <h3>
-                    M.S. in Physics
-                </h3>
-
-                <p>
-                    Indian Institute of Science, Bangalore
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="timeline-item">
-
-            <span class="timeline-date">
-                2018 — 2021
-            </span>
-
-            <div>
-
-                <h3>
-                    B.Sc. (Hons.) in Physics
-                </h3>
-
-                <p>
-                    St. Stephen's College, University of Delhi
-                </p>
-
-            </div>
-
-        </div>
 
     </div>
 
@@ -710,58 +1080,63 @@
 <div class="footer-container">
 
 
-    <div class="footer-main">
+    <div class="footer-brand">
 
-        <h2>
-            Manish Tamta
-        </h2>
+        <div class="footer-logo">
+            MT
+        </div>
 
-        <p>
-            PhD Researcher · Cosmology · Gravitational Lensing
-        </p>
+        <div>
+
+            <h3>
+                Manish Tamta
+            </h3>
+
+            <p>
+                Gravitational Lensing · Astroparticle Physics
+                · Cosmology
+            </p>
+
+        </div>
 
     </div>
 
 
     <div class="footer-links">
 
-        <a
-            href="https://scholar.google.com/citations?user=9Eu10_cAAAAJ"
-            target="_blank"
-            rel="noopener noreferrer">
 
+        <a href="https://scholar.google.com/citations?user=9Eu10_cAAAAJ"
+           target="_blank"
+           rel="noopener noreferrer">
             Google Scholar
-
         </a>
 
 
-        <a
-            href="https://inspirehep.net/authors/2797698"
-            target="_blank"
-            rel="noopener noreferrer">
-
+        <a href="https://inspirehep.net/authors/2797698"
+           target="_blank"
+           rel="noopener noreferrer">
             INSPIRE
-
         </a>
 
 
-        <a
-            href="https://github.com/manns01"
-            target="_blank"
-            rel="noopener noreferrer">
+        <a href="https://orcid.org/0009-0006-7088-8705"
+           target="_blank"
+           rel="noopener noreferrer">
+            ORCID
+        </a>
 
+
+        <a href="https://github.com/manns01"
+           target="_blank"
+           rel="noopener noreferrer">
             GitHub
-
         </a>
 
 
-        <a
-            href="https://www.linkedin.com/in/manish-tamta-7a4bb9184/"
-            target="_blank"
-            rel="noopener noreferrer">
-
+        <a href="https://www.linkedin.com/in/manish-tamta-7a4bb9184/"
+           target="_blank"
+           rel="noopener noreferrer">
             LinkedIn
-
         </a>
 
 
@@ -774,13 +1149,16 @@
 
     <div class="footer-bottom">
 
+
         <span>
             manishtamta[at]iisc.ac.in
         </span>
 
+
         <span>
             © 2026 Manish Tamta
         </span>
+
 
     </div>
 
@@ -790,6 +1168,10 @@
 </footer>
 
 </main>
+
+<!-- JavaScript -->
+
+<script src="script.js"></script>
 
 </body>
 
